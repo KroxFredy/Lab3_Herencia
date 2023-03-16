@@ -16,8 +16,15 @@ public class Estudiante extends Persona {
     private double promedioNotas;
     private int numeroMaterias;
     private int grado;
-    private int notas;
-    double[] arr = new double[numeroMaterias];
+    double[] arr;
+
+    public double[] getArr() {
+        return arr;
+    }
+
+    public void setArr(double[] arr) {
+        this.arr = arr;
+    }
 
     public int getGrado() {
         return grado;
@@ -31,12 +38,11 @@ public class Estudiante extends Persona {
     }
 
     public String getCarnet() {
-        return carnet;
+        return this.carnet;
     }
 
     public void setCarnet(String carnet) {
         this.carnet = carnet;
-        System.out.println(this.carnet);
     }
 
     public double getPromedioNotas() {
@@ -57,31 +63,29 @@ public class Estudiante extends Persona {
 
     public double calcularPromedio() {
         double suma = 0;
-        for (int i = 0; i < this.notas; i++){
-            suma += arr[i];
+        for (int i = 0; i < this.numeroMaterias; i++){
+            suma += getArr()[i];
         }
-        return suma/this.notas;
+        return suma/this.numeroMaterias;
     }
 
     public void leerNotasEstudiante() {
         int n = 0;
         n = leerDatoTipoEntero("Digitie numero de materias");
+        setNumeroMaterias(n);
         double[] arr = new double[n];
-        this.notas = n;
         setNumeroMaterias(n);
         for (int i = 0; i < n; i++){
             arr[i] = leerDatoTipoReal("Digite nota de la materia "+(i+1));
         }
-        this.arr = arr;
+        setArr(arr);
     }
+    
     @Override
     public void imprimirDatosPersona(){
-        Estudiante es = new Estudiante();
-        System.out.println(es.carnet);
-        JOptionPane.showMessageDialog(null, "======== DATOS DEL ESTUDIANTE =======\n"+es.carnet);
+        JOptionPane.showMessageDialog(null, "======== DATOS DEL ESTUDIANTE =======\n"+getCarnet());
     }
     public void ingresarDatosEstudiante() {
-        Estudiante es = new Estudiante();
         String nombre;
         String apellido;
         String carnet;
@@ -92,12 +96,11 @@ public class Estudiante extends Persona {
         edad = leerDatoTipoEntero("Digite la edad del Estudiante");
         grado = leerDatoTipoEntero("Digite el grado que cursa el Estudiante");
         carnet = "Nombre: "+nombre+"\nApellido: "+apellido+"\nEdad: "+edad+"\nGrado: "+grado;
-        es.setCarnet(carnet);
+        setCarnet(carnet);
     }
 
     public void imprimirReporteNotasEstudiante() {
-        Estudiante es = new Estudiante();
-        es.imprimirDatosPersona();
-        JOptionPane.showMessageDialog(null, "El promedio de las notas del estudiante es: "+es.calcularPromedio());
+        imprimirDatosPersona();
+        JOptionPane.showMessageDialog(null, "El promedio de las notas del estudiante es: "+calcularPromedio());
     }
 }
