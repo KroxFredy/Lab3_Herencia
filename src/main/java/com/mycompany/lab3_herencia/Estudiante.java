@@ -16,7 +16,7 @@ public class Estudiante extends Persona {
     private double promedioNotas;
     private int numeroMaterias;
     private int grado;
-    double[] arr;
+    private double[] arr;
 
     public double[] getArr() {
         return arr;
