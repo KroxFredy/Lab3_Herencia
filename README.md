@@ -20,7 +20,7 @@ depúrelo y ejecútelo. Luego analice el ejemplo dado y responda el cuestionario
   - Compare el método definirEstadoPersona (int edad) con el mismo método sobreescrito para definir el estado del empleado. ¿Qué diferencias tienen? ¿Por qué se hace?
   - Cree una nueva subclase llamada Estudiante según el siguiente diagrama de clases
   
-## Diagrama de clases
+## Diagrama de clases y casos de uso
 
 ![Diagrama de clases](https://user-images.githubusercontent.com/89433189/226069865-17abb210-b726-4354-984a-45c14db2b215.png)
 ![Casos de uso](https://user-images.githubusercontent.com/89433189/226071822-36c0c924-73be-4dbd-ae62-658db75e2266.png)
