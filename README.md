@@ -9,7 +9,7 @@
 
 **Preparación y creación del proyecto**
 
-1. Considerando los conceptos vistos de herencia, cree un nuevo proyecto con las siguientes Clases,
+* Considerando los conceptos vistos de herencia, cree un nuevo proyecto con las siguientes Clases,
 depúrelo y ejecútelo. Luego analice el ejemplo dado y responda el cuestionario adjunto.
 
   - Que métodos de la Superclase son utilizados en la subclase
