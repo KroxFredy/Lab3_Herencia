@@ -23,3 +23,4 @@ depúrelo y ejecútelo. Luego analice el ejemplo dado y responda el cuestionario
 ## Diagrama de clases
 
 ![Diagrama de clases](https://user-images.githubusercontent.com/89433189/226069865-17abb210-b726-4354-984a-45c14db2b215.png)
+![Casos de uso](https://user-images.githubusercontent.com/89433189/226071822-36c0c924-73be-4dbd-ae62-658db75e2266.png)
